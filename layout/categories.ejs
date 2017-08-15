@@ -22,6 +22,7 @@
         <% }) %>
             </div>
             <% } else { %>
+                <h5>分类数: <%-site.categories.length %></h5>
                 <div class="card-pool">
                 <% site.categories.each(function(category){
                     if(category.length){ %>
