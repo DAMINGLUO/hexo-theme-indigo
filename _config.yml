@@ -16,7 +16,7 @@ menu:
     url: /archives
     num: <%-site.posts.length %>
     numClass: 
-  categories:
+  th-list:
     text: 分类
     url: /categories
     num: <%-site.categories.length %>
