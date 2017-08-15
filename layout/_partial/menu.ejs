@@ -27,7 +27,11 @@
             <li class="waves-block waves-effect<% if(isActive(menuItem)){ %> active<% } %>">
               <a href="<%- url_for(menuItem.url) %>" <% if(menuItem.target){ %>target="_blank"<% } %> >
                 <i class="icon icon-lg icon-<%= i %>"></i>
+                
                 <%=(menuItem.text || _.startCase(i)) %>
+                <% if(menuItem.num) {%>
+                  <span class="<%-menuItem.numClass %>"><%=_.template(menuItem.num)(locals) %></span>
+                <% } %>
               </a>
             </li>
         <% } %>

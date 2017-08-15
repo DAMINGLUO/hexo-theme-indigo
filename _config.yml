@@ -11,12 +11,18 @@ menu:
   home:
     text: 主页
     url: /
+    num: <%-site.posts.length %>
+    numClass: 
   th-list:
     text: 分类
     url: /categories
+    num: <%-site.categories.length %>
+    numClass:
   tags:
     text: 标签
     url: /tags
+    num: <%-site.tags.length %>
+    numClass:
   code:
     text: 算法模板
     url: /templates.html
@@ -53,9 +59,9 @@ email: oyohyee@oyohyee.com
 color: '#428bca'
 
 # 页面标题
-tags_title: Tags
+tags_title: 标签
 archives_title: Archives
-categories_title: Categories
+categories_title: 分类
 
 # 文章截断
 excerpt_render: true
