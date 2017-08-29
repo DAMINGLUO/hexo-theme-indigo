@@ -14,17 +14,17 @@ menu:
   archives:
     text: 归档
     url: /archives
-    num: <%-site.posts.length %>
+    num: site.posts.length
     numClass: digit
   th-list:
     text: 分类
     url: /categories
-    num: <%-site.categories.length %>
+    num: site.categories.length
     numClass: digit
   tags:
     text: 标签
     url: /tags
-    num: <%-site.tags.length %>
+    num: site.tags.length
     numClass: digit
   code:
     text: 算法模板
