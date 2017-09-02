@@ -113,6 +113,43 @@
             text-decoration: none;
         }
     }
+
+    .nav2 {
+        padding: 0;
+        li {
+            float: left;
+            display: block;
+            span{
+                font-size: 5px;
+                
+            }
+            .icon {
+                position: absolute;
+            }
+
+            .github{
+                color: black;
+            }
+            .qq{
+                color: #41aae7;
+            }
+            .commenting{
+                color: #4cae50;
+            }
+
+            &:hover,
+            &.active {
+                background: rgba(0, 0, 0, 0);
+                a,
+                .icon {
+                    color: @accentColor;
+                }
+            }
+            a{
+                padding: 10px;
+            }
+        }
+    }
 }
 
 #main {
@@ -195,6 +232,15 @@
     }
     .bottom {
         padding: 16px;
+    }
+    .friends {
+        a,
+        a:active {
+            color: rgba(255,255,255,.6);
+        }
+        a:hover {
+            color: @accentColor;
+        }
     }
 }
 
