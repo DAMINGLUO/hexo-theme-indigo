@@ -26,25 +26,42 @@ menu:
     url: /tags
     num: site.tags.length
     numClass: digit
+  OhYee:
+    text: 我的项目
+    url: /projects
   code:
     text: 算法模板
     url: /templates.html
+  
+
+menu2:
   address-card:
     text: 关于
     url: /about
-  github:
-    url: https://github.com/OhYee
-    target: _blank
-  comment:
+  commenting:
     text: 评论系统
     url: /gitment
   qq:
     text: QQ联系
     url: http://wpa.qq.com/msgrd?v=3&uin=896817156&site=qq&menu=yes
     target: _blank
-  link:
-    text: 友情链接
-    url: /about/index.html#友情链接
+  github:
+    text: github
+    url: https://github.com/OhYee
+    target: _blank
+
+friends:
+  Hakale: http://hakale.cn/
+  ACBlackTea: http://blog.csdn.net/acblacktea
+  Wilbert: http://blog.csdn.net/snow_me
+  ADjky: http://blog.csdn.net/adjky/
+  JACK_JYH: http://blog.csdn.net/JACK_JYH/
+  Super丶xd: http://blog.csdn.net/qq_35323001
+  Pengwill: http://blog.csdn.net/pengwill97
+  Mr_Saltyfish: http://blog.csdn.net/Mr_Saltyfish
+  wmr: http://www.cnblogs.com/wmrv587/
+  Robin: http://www.cnblogs.com/robin1998/
+  
 
 # 你的头像url
 avatar: /logo.svg
@@ -90,6 +107,7 @@ search: true
 
 # 是否大屏幕下文章页隐藏导航
 hideMenu: false
+hideMenuDefault: false
 
 # 是否开启toc
 # toc: false
