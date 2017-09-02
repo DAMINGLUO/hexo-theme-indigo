@@ -1,4 +1,4 @@
-<aside id="menu" <% if((is_post() || page.layout === 'page') && theme.hideMenu){ %>class="hide"<% } %> >
+<aside id="menu" <% if(theme.hideMenuDefault || (is_post() || page.layout === 'page') && theme.hideMenu){ %>class="hide"<% } %> >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -35,6 +35,24 @@
               </a>
             </li>
         <% } %>
+
+      <ul class="nav2">
+          <%
+            var menuItem, isActive = function(item) {
+                var pageUrl = url_for(page.path)
+                return item.url === '/' ? pageUrl === url_for(item.url + 'index.html') : _.startsWith(pageUrl, url_for(item.url))
+            };
+            for (var i in theme.menu2) {
+              menuItem = theme.menu2[i];
+            %>
+              <li class="waves-block waves-effect<% if(isActive(menuItem)){ %> active<% } %>">
+                <a href="<%- url_for(menuItem.url) %>" <% if(menuItem.target){ %>target="_blank"<% } %> <% if(menuItem.text){ %>title="<%-menuItem.text %>"<% } %> >
+                  <i class="icon icon-lg icon-<%= i %> <%= i %>"></i>
+                </a>
+              </li>
+          <% } %>
+        </ul>
+
       </ul>
     </div>
   </div>
